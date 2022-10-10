@@ -1,0 +1,39 @@
+<html>
+<head>
+
+	<title>AI Video Surveillance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-modern-technology-intelligent-ai-era-background-design-backgroundintelligent-ai-technologypsd-image_75384.jpg">
+<center>
+    <h3 class="btn btn-info heading">AI OBJECT FINDER
+        <p>The input name which you will give should match with the name present in the COCOSSD model then only it will detect</p>
+    </h3>
+    <br><br>
+    <div>
+        <h4>OBJECT NAME</h4>
+        <input type="place_holder" id="object_placeholder" class="place_holder">
+    </div>
+    <br><br>
+    <button class="btn btn-primary" id="start" onclick="start()">Start</button>
+    <br><br>
+    <span>
+        <button class="btn btn-info" id="number_of_objects_detected"></button>
+        <br><br>
+        <button class="btn btn-primary" id="status"></button>
+        <br><br>
+    </span>
+</center>
+<script src="main.js"></script>
+</body>
+</html>
